@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quraanali.imageviewerexample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ImageViewerExample">
+
+        <activity
+            android:name="com.quraanali.imageviewerexample.features.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.quraanali.imageviewerexample.features.demo.grid.PostersGridDemoActivity"
+            android:label="@string/action_images_grid"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.quraanali.imageviewerexample.features.demo.scroll.ScrollingImagesDemoActivity"
+            android:label="@string/action_scroll"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.quraanali.imageviewerexample.features.demo.styled.StylingDemoActivity"
+            android:label="@string/action_style"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.quraanali.imageviewerexample.features.demo.rotation.RotationDemoActivity"
+            android:label="@string/action_rotation"/>
+
+
+    </application>
+
+</manifest>
